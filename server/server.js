@@ -1,18 +1,21 @@
 const express = require('express');
-const app = express();
-const path = require('path');
 const hbs = require('hbs');
+const path = require('path');
 
-app.use(express.static(path.join(__dirname,'public')));
-hbs.registerPartials(path.join(__dirname,'views/partials'));
+const app = express();
 
-app.set('view engine','hbs');
-app.get('/',(req,res) => {
-    res.render('index',{
-        pagetitle:'AutoMotive Project'
+app.set('view engine', 'hbs');
+
+app.use(express.static(path.join(__dirname, '../public')));
+hbs.registerPartials(path.join(__dirname, '../views/partials'));
+
+
+app.get('/', (req, res) => {
+    res.render('index', {
+        pageTitle: 'Automotive Project'
     });
 });
 
-app.listen(3000,() => {
-    console.log('Server is runing on port 3000 !');
-})
+app.listen(3000, () => {
+    console.log('Server is running on port 3000');
+});
