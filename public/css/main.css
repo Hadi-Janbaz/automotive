@@ -1147,6 +1147,7 @@ nav ul li a:hover {
     font-size: 4em;
     font-family: 'Yellowtail', cursive;
     color: #c7081b;
+    font-weight: 100;
     float: left;
     text-shadow: 2px 3px 4px #fff;
 }
