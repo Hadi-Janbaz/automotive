@@ -12,7 +12,16 @@ hbs.registerPartials(path.join(__dirname, '../views/partials'));
 
 app.get('/', (req, res) => {
     res.render('index', {
-        pageTitle: 'Automotive Project'
+        pageTitle: 'Automotive Project',
+        active_home: 'active',
+        active_about: ''
+    });
+});
+app.get('/about', (req, res) => {
+    res.render('aboutus', {
+        pageTitle: 'Automotive Project',
+        active_home: '',
+        active_about: 'active'
     });
 });
 

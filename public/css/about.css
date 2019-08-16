@@ -1,0 +1,153 @@
+.ourTeam {
+    background-image: url(../img/dynamic-header-11.jpg);
+    width: 100%;
+    height: 300px;
+    float: left;
+}
+
+.shaddow {
+    width: 100%;
+    background: url(../img/message-shadow.png) top center repeat-x;
+    height: 21px;
+    margin: auto;
+    float: left;
+    margin-top: 2px;
+}
+
+.teamContent {
+    width: 100%;
+    float: left;
+    text-align: center;
+    background: white;
+    margin-bottom: 50px;
+}
+
+.teamContent h2 {
+    padding: 20px 0;
+    color: #c7081b;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    font-family: 'Open Sans', sans-serif, Arial;
+    text-align: left;
+}
+
+.teamContent > .container > div {
+    display: inline-block;
+    float: left;
+    width: 33.33333%;
+    text-align: left;
+}
+
+.teamContent > .container > div:nth-of-type(1) {
+    padding-right: 10px;
+}
+
+.teamContent > .container > div:nth-of-type(2) {
+    padding: 0 5px;
+}
+
+.teamContent > .container > div:nth-of-type(3) {
+    padding-left: 10px;
+}
+
+.teamContent.sales > .container > div {
+    width: 25%;
+}
+
+.teamContent.sales > .container > div:nth-of-type(1) {
+    padding-right: 10px;
+}
+
+.teamContent.sales > .container > div:nth-of-type(2),
+.teamContent.sales > .container > div:nth-of-type(3) {
+    padding: 0 5px;
+}
+
+.teamContent.sales > .container > div:nth-of-type(4) {
+    padding-left: 10px;
+}
+
+.teamContent > .container > div > img {
+    width: 100%;
+    height: 285px;
+}
+
+.teamContent.sales > .container > div > img {
+    width: 100%;
+    height: 180px;
+}
+
+.teamContent > .container > div > h3 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 22px;
+    letter-spacing: -1px;
+    font-family: 'Yellowtail', cursive;
+    margin-bottom: 6px;
+    color: #c7081b;
+}
+
+.teamContent > .container > div > h4 {
+    font-weight: normal;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif, Arial;
+    line-height: 28px;
+}
+
+.teamContent > .container > div > h4::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: gray;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.teamContent > .container > div > p {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.teamContent > .container > div > span {
+    display: block;
+    padding: 3px 21px 3px 21px;
+    position: relative;
+}
+
+.teamContent > .container > div > span > i {
+    position: absolute;
+    left: 0;
+    text-align: center;
+    line-height: 24px;
+    font-size: 17px;
+    color: gray;
+}
+
+.teamContent > .container > div > span:nth-of-type(2) > i {
+    font-size: 28px;
+    left: 2px;
+}
+
+.teamContent > .container > div > span:nth-of-type(3) {
+    color: #c7081b;
+}
+
+.backImg {
+    width: 100%;
+    background-image: url(../img/parallax2.jpg);
+    background-attachment: fixed;
+    position: absolute;
+    height: 300px;
+    z-index: -1;
+    background-position: 42% 17%;
+    background-repeat: no-repeat;
+}
+
+.teamContent.bottom {
+    margin-bottom: 0;
+}
